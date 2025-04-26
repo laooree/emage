@@ -1,0 +1,24 @@
+#+title: Emage
+#+author: laooree
+#+description: Summon my Fedora setup on your machine.
+
+* Description
+
+This repo hosts my shell scripts to setup a usable system in a fresh Linux
+Fedora install.  For now it's far from complete, as it installs only a few
+packages. But it's gorgeous, at least.
+
+* Instructions
+
+Make =run.sh= executable with =chmod +x run.sh=, then run it with =./run.sh=.
+
+* Disclaimer
+
+It's my personal setup, so it must fit my usage before everyone else's. Given
+that, every kind of suggestion is welcome and appreciated.
+
+* To-Do's
+
+- [ ] Flatpacks;
+- [ ] Add repos;
+- [ ] Dotfiles;
