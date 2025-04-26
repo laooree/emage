@@ -8,6 +8,8 @@ This repo hosts my shell scripts to setup a usable system in a fresh Linux
 Fedora install.  For now it's far from complete, as it installs only a few
 packages. But it's gorgeous, at least.
 
+Took inspiration from [[https://github.com/typecraft-dev/crucible][typecraft's Crucible]].
+
 * Instructions
 
 Make =run.sh= executable with =chmod +x run.sh=, then run it with =./run.sh=.
@@ -17,7 +19,7 @@ Make =run.sh= executable with =chmod +x run.sh=, then run it with =./run.sh=.
 It's my personal setup, so it must fit my usage before everyone else's. Given
 that, every kind of suggestion is welcome and appreciated.
 
-* To-Do's
+* To do:
 
 - [ ] Flatpacks;
 - [ ] Add repos;
