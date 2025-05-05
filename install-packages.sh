@@ -1,52 +1,76 @@
 #!/bin/bash
 
-# # First of all, let's install dnf-plugins-core
-# # This allows to easily add repositories
-# install_packages "dnf-plugins-core"
+# First of all, let's make sure dnf-plugins-core
+# is installed, to configure additional repos.
+install_packages "dnf-plugins-core"
 
 
-# # Then let's add extra repositories
-# if is_installed "dnf-plugins-core"; then
-
-#   # Add brave browser repo
-#   sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-
-# fi
 
 PACKAGES=(
 
   # System monitoring
   fastfetch
 
-  
+  # Browser
+  firefox
 
   # Text editors
   emacs
   neovim
 
-
+  # Terminal emulator
+  kitty
 
   # Tools
-  dnf-plugins-core
-  ripgrep
+  flatpak
   fzf
+  ghostscript
+  ripgrep
   zsh
 
-
-
-  # Languages
-  clojure
+  # Programming Languages
   julia
   nodejs
   nodejs-bash-language-server
   texlive-scheme-full  # LaTeX distribution
 
-
-
   # Gaming
   steam
+
 
 )
 
 
+
 install_packages "${PACKAGES[@]}"
+
+
+
+FLATPAKS=(
+  "anytype"
+  "audacity"
+  "calibre"
+  "discord"
+  "ear tag"
+  "flatseal"
+  "gimp"
+  "hakuneko"
+  "kcc"
+  "onlyoffice"
+  "pcsx2"
+  "qbittorrent"
+  "spotify"
+  "telegram"
+  "vlc"
+  "vlc"
+  "zotero"
+)
+
+for pak in "${FLATPAKS[@]}"; do
+  if ! flatpak list | grep -i "$pak" &> /dev/null; then
+    echo "Installing Flatpak: $pak"
+    flatpak install --noninteractive "$pak"
+  else
+    echo "Flatpak already installed: $pak"
+  fi
+done

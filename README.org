@@ -18,9 +18,3 @@ Make =run.sh= executable with =chmod +x run.sh=, then run it with =./run.sh=.
 
 It's my personal setup, so it must fit my usage before everyone else's. Given
 that, every kind of suggestion is welcome and appreciated.
-
-* To do:
-
-- [ ] Flatpacks;
-- [ ] Add repos;
-- [ ] Dotfiles;

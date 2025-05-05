@@ -24,6 +24,6 @@ install_packages() {
   if [ ${#to_install[@]} -ne 0 ]; then
     sudo dnf install -y "${to_install[@]}"
   else
-    echo "All packages already installed. Nothing to do."
+    echo "All packages are installed."
   fi
 } 
