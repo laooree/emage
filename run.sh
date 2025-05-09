@@ -7,17 +7,18 @@ print_initial_logo
 
 
 
-# Source utility functions
-source utils.sh
-
-
-
 # Install packages
 echo -e "\nInstalling packages..."
 source install-packages.sh
-sleep 3
+
+
+
+# Install fonts
+echo -e "\nInstalling fonts..."
+source install-fonts.sh
 
 
 
 # Print ending screen
+sleep 3
 print_ending_message
