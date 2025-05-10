@@ -71,12 +71,21 @@ PACKAGES=(
   ghostscript
   ripgrep
   zsh
-
+  
   # Programming Languages
   julia
   nodejs
   nodejs-bash-language-server
   texlive-scheme-full  # LaTeX distribution
+
+  # Python
+  python3-lsp-server     # language server
+  python3-yapf           # formatter
+  # linters
+  python3-pyflakes       # errors
+  python3-pycodestyles   # styiling
+  python3-mccabe         # complexity
+  python3-flake8         # wrapper of previous
 
   # Gaming
   steam
