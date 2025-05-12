@@ -83,9 +83,6 @@ PACKAGES=(
   python3-yapf           # formatter
   # linters
   python3-pyflakes       # errors
-  python3-pycodestyles   # styiling
-  python3-mccabe         # complexity
-  python3-flake8         # wrapper of previous
 
   # Gaming
   steam
