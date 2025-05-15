@@ -34,7 +34,7 @@ NERD_FONTS=(
   "FiraMono"
   "FiraCode"
   "Arimo"
-  "CodeNewRoman"
+  "ComicShannsMono"
 )
 
 for font in "${NERD_FONTS[@]}"; do
